@@ -40,7 +40,8 @@ def heroku():
 
 def heroku_test():
     local(
-        "heroku run python test_tasks.py -v && heroku run python test_users.py -v"
+        "heroku run python test_tasks.py -v && heroku run python test_users.py"
+        " -v"
     )
 
 
